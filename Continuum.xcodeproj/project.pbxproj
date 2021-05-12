@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0AA4D5264B1944005BC2A5 /* PostListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4D4264B1944005BC2A5 /* PostListTableViewController.swift */; };
+		0D0AA4D7264B1978005BC2A5 /* PostDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4D6264B1978005BC2A5 /* PostDetailTableViewController.swift */; };
+		0D0AA4D9264B19A6005BC2A5 /* AddPostTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4D8264B19A6005BC2A5 /* AddPostTableViewController.swift */; };
+		0D0AA4DB264B19FA005BC2A5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4DA264B19FA005BC2A5 /* Post.swift */; };
+		0D0AA4DD264B1E2F005BC2A5 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4DC264B1E2F005BC2A5 /* Comment.swift */; };
+		0D0AA4DF264B1F73005BC2A5 /* PostController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4DE264B1F73005BC2A5 /* PostController.swift */; };
+		0D0AA4E1264B1FF1005BC2A5 /* PostError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4E0264B1FF1005BC2A5 /* PostError.swift */; };
+		0D0AA4E3264B27B3005BC2A5 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0AA4E2264B27B3005BC2A5 /* PostTableViewCell.swift */; };
 		F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7F99C382211F96400D13C4C /* AppDelegate.swift */; };
 		F7F99C3E2211F96400D13C4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7F99C3C2211F96400D13C4C /* Main.storyboard */; };
 		F7F99C402211F96600D13C4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7F99C3F2211F96600D13C4C /* Assets.xcassets */; };
@@ -14,6 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D0AA4D4264B1944005BC2A5 /* PostListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListTableViewController.swift; sourceTree = "<group>"; };
+		0D0AA4D6264B1978005BC2A5 /* PostDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailTableViewController.swift; sourceTree = "<group>"; };
+		0D0AA4D8264B19A6005BC2A5 /* AddPostTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPostTableViewController.swift; sourceTree = "<group>"; };
+		0D0AA4DA264B19FA005BC2A5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		0D0AA4DC264B1E2F005BC2A5 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		0D0AA4DE264B1F73005BC2A5 /* PostController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostController.swift; sourceTree = "<group>"; };
+		0D0AA4E0264B1FF1005BC2A5 /* PostError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostError.swift; sourceTree = "<group>"; };
+		0D0AA4E2264B27B3005BC2A5 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		F7F99C352211F96400D13C4C /* Continuum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Continuum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F99C382211F96400D13C4C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7F99C3D2211F96400D13C4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -33,6 +49,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D0AA4CB264B15C0005BC2A5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F7F99C382211F96400D13C4C /* AppDelegate.swift */,
+				F7F99C3F2211F96600D13C4C /* Assets.xcassets */,
+				F7F99C442211F96600D13C4C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0D0AA4CC264B1667005BC2A5 /* Helpers and Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4E0264B1FF1005BC2A5 /* PostError.swift */,
+			);
+			path = "Helpers and Extensions";
+			sourceTree = "<group>";
+		};
+		0D0AA4CD264B1685005BC2A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4D1264B169B005BC2A5 /* CustomViews */,
+				0D0AA4D0264B1693005BC2A5 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0D0AA4CE264B168A005BC2A5 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4D2264B16A2005BC2A5 /* ModelControllers */,
+				0D0AA4D3264B16AA005BC2A5 /* ViewControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0D0AA4CF264B168F005BC2A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4DA264B19FA005BC2A5 /* Post.swift */,
+				0D0AA4DC264B1E2F005BC2A5 /* Comment.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0D0AA4D0264B1693005BC2A5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				F7F99C3C2211F96400D13C4C /* Main.storyboard */,
+				F7F99C412211F96600D13C4C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		0D0AA4D1264B169B005BC2A5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4E2264B27B3005BC2A5 /* PostTableViewCell.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		0D0AA4D2264B16A2005BC2A5 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4DE264B1F73005BC2A5 /* PostController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		0D0AA4D3264B16AA005BC2A5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				0D0AA4D4264B1944005BC2A5 /* PostListTableViewController.swift */,
+				0D0AA4D6264B1978005BC2A5 /* PostDetailTableViewController.swift */,
+				0D0AA4D8264B19A6005BC2A5 /* AddPostTableViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		F7F99C2C2211F96400D13C4C = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +148,11 @@
 		F7F99C372211F96400D13C4C /* Continuum */ = {
 			isa = PBXGroup;
 			children = (
-				F7F99C382211F96400D13C4C /* AppDelegate.swift */,
-				F7F99C3C2211F96400D13C4C /* Main.storyboard */,
-				F7F99C3F2211F96600D13C4C /* Assets.xcassets */,
-				F7F99C412211F96600D13C4C /* LaunchScreen.storyboard */,
-				F7F99C442211F96600D13C4C /* Info.plist */,
+				0D0AA4CF264B168F005BC2A5 /* Models */,
+				0D0AA4CE264B168A005BC2A5 /* Controllers */,
+				0D0AA4CD264B1685005BC2A5 /* Views */,
+				0D0AA4CC264B1667005BC2A5 /* Helpers and Extensions */,
+				0D0AA4CB264B15C0005BC2A5 /* Resources */,
 			);
 			path = Continuum;
 			sourceTree = "<group>";
@@ -133,6 +229,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7F99C392211F96400D13C4C /* AppDelegate.swift in Sources */,
+				0D0AA4DD264B1E2F005BC2A5 /* Comment.swift in Sources */,
+				0D0AA4E1264B1FF1005BC2A5 /* PostError.swift in Sources */,
+				0D0AA4D5264B1944005BC2A5 /* PostListTableViewController.swift in Sources */,
+				0D0AA4D9264B19A6005BC2A5 /* AddPostTableViewController.swift in Sources */,
+				0D0AA4DF264B1F73005BC2A5 /* PostController.swift in Sources */,
+				0D0AA4D7264B1978005BC2A5 /* PostDetailTableViewController.swift in Sources */,
+				0D0AA4DB264B19FA005BC2A5 /* Post.swift in Sources */,
+				0D0AA4E3264B27B3005BC2A5 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,7 +384,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77U2457882;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				INFOPLIST_FILE = Continuum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +402,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 77U2457882;
-				INFOPLIST_FILE = Continuum/Info.plist;
+				INFOPLIST_FILE = Continuum/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
