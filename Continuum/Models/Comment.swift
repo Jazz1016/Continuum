@@ -13,7 +13,6 @@ class Comment {
     
     var text: String
     var timestamp: Date
-    
     weak var post: Post?
     
     init(text: String, timestamp: Date = Date(), post: Post){
@@ -22,4 +21,10 @@ class Comment {
         self.post = post
     }
     
+}
+
+extension Comment: SearchableRecord {
+    func matches(searchTerm: String) -> Bool {
+        return text.contains(searchTerm)
+    }
 }
